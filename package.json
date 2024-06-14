@@ -14,6 +14,7 @@
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.14.2",
+    "dotenv": "^16.4.5",
     "eslint": "9.x",
     "eslint-config-prettier": "^9.1.0",
     "knip": "^5.19.0",
