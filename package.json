@@ -1,0 +1,26 @@
+{
+  "name": "starter-typescript-tsx",
+  "version": "0.1.0",
+  "description": "A starter Node.js project featuring TypeScript and TSX integration.",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "tsx src/main.ts"
+  },
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.14.2",
+    "eslint": "9.x",
+    "eslint-config-prettier": "^9.1.0",
+    "knip": "^5.19.0",
+    "rimraf": "^5.0.7",
+    "tsx": "^4.15.4",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.13.0"
+  },
+  "dependencies": {}
+}

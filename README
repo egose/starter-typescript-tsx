@@ -1,0 +1,9 @@
+# starter-typescript-tsx
+
+## Typescript
+
+- please see https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Compiler%20Options.md#compiler-options
+
+## ESLint
+
+- npx eslint --init
