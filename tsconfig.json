@@ -3,7 +3,7 @@
     "target": "ES2022",
     "module": "ES2022",
     "moduleResolution": "node",
-    "rootDir": ".",
+    "rootDir": "src",
     "baseUrl": "src",
     "outDir": "build",
     "resolveJsonModule": true,
@@ -13,5 +13,6 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["./src"]
 }

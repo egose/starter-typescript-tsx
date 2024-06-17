@@ -4,7 +4,8 @@
   "description": "A starter Node.js project featuring TypeScript and TSX integration.",
   "scripts": {
     "build": "rimraf ./build && tsc",
-    "start": "tsx src/main.ts"
+    "start": "tsx src/main.ts",
+    "docker": "docker build -t starter-typescript-tsx ."
   },
   "type": "module",
   "author": "",
