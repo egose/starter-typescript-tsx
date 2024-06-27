@@ -22,7 +22,6 @@ jobs:
 
     - name: Run App build
       run: npm run build
-      working-directory: app
 
   pre-commit:
     runs-on: ubuntu-22.04
