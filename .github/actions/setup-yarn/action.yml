@@ -1,0 +1,21 @@
+name: Setup NPM Packages
+description: Setup required NPM packages
+
+runs:
+  using: composite
+  steps:
+  # See https://github.com/actions/cache/blob/main/examples.md#node---yarn
+  - name: Get yarn cache directory path
+    id: yarn-cache-dir-path
+    run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+
+  - uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9
+    with:
+      path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+      key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+      restore-keys: |
+        ${{ runner.os }}-yarn-
+
+  - name: Install NPM dependencies
+    run: yarn
+    shell: bash
