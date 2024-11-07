@@ -1,14 +1,18 @@
 name: Setup Tools
-description: Setup required tools in the workspace
+description: Install and configure required tools in the workspace
 
 runs:
   using: composite
   steps:
-  - name: Setup Tools
+  - name: Setup ASDF Tools
     uses: egose/actions/asdf-tools@0c63eae5ec430443674adb1324ee68d88723b013
 
-  - name: Install python tools
+  - name: Install System Dependencies
+    run: sudo apt-get install -y libsqlite3-dev
+    shell: bash
+
+  - name: Install Python Requirements
     run: |
       pip install -r requirements.txt
-      asdf reshim
+      asdf reshim python
     shell: bash
