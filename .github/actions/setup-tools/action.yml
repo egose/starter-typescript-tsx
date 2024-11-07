@@ -4,12 +4,12 @@ description: Install and configure required tools in the workspace
 runs:
   using: composite
   steps:
-  - name: Setup ASDF Tools
-    uses: egose/actions/asdf-tools@0c63eae5ec430443674adb1324ee68d88723b013
-
   - name: Install System Dependencies
     run: sudo apt-get install -y libsqlite3-dev
     shell: bash
+
+  - name: Setup ASDF Tools
+    uses: egose/actions/asdf-tools@0c63eae5ec430443674adb1324ee68d88723b013
 
   - name: Install Python Requirements
     run: |
