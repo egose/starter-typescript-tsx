@@ -5,7 +5,23 @@ runs:
   using: composite
   steps:
   - name: Install System Dependencies
-    run: sudo apt-get install -y libsqlite3-dev
+    run: |
+      sudo apt-get update -y
+      sudo apt-get install -y \
+        build-essential \
+        libssl-dev \
+        zlib1g-dev \
+        libncurses5-dev \
+        libncursesw5-dev \
+        libreadline-dev \
+        libsqlite3-dev \
+        libgdbm-dev \
+        libdb5.3-dev \
+        libbz2-dev \
+        libexpat1-dev \
+        liblzma-dev \
+        tk-dev \
+        libffi-dev
     shell: bash
 
   - name: Setup ASDF Tools
