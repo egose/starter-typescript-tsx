@@ -889,9 +889,9 @@ jackspeak@^4.0.1:
     "@isaacs/cliui" "^8.0.2"
 
 jiti@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/jiti/-/jiti-2.4.0.tgz#393d595fb6031a11d11171b5e4fc0b989ba3e053"
-  integrity sha512-H5UpaUI+aHOqZXlYOaFP/8AzKsg+guWu+Pr3Y8i7+Y3zr1aXAvCvTAQ1RxSc6oVD8R8c7brgNtTVP91E7upH/g==
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-2.4.1.tgz#4de9766ccbfa941d9b6390d2b159a4b295a52e6b"
+  integrity sha512-yPBThwecp1wS9DmoA4x4KR2h3QoslacnDR8ypuFM962kI4/456Iy1oHx2RAgh4jfZNdn0bctsdadceiBUgpU1g==
 
 js-yaml@^4.1.0:
   version "4.1.0"
@@ -923,9 +923,9 @@ keyv@^4.5.4:
     json-buffer "3.0.1"
 
 knip@^5.19.0:
-  version "5.38.2"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-5.38.2.tgz#e7dacd8ec8061a8340f485320c26f373b7bed7f8"
-  integrity sha512-gVduAQa80bar/uKtQDvOCBzTApdjqiz8e9eDIdRkYFyTAQM/DriWLi2vv/2AlzMcPYeSWddLptBdgN4whGzFtg==
+  version "5.38.3"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-5.38.3.tgz#a139e0c6215c9958d213ce1a9e3985cf5de2774e"
+  integrity sha512-pg3CMzWlZy4mnuwxieGoK74oOgzFPvsUR/aE8NSqx2oQr56soXTzmw8GsHR277pU52Fe0h4/pho2PMhVeEvj8g==
   dependencies:
     "@nodelib/fs.walk" "1.2.8"
     "@snyk/github-codeowners" "1.1.0"
