@@ -1,4 +1,4 @@
-FROM node:22.11.0-alpine3.19 as build
+FROM node:22.12.0-alpine3.19 as build
 WORKDIR /opt
 
 COPY src ./src
@@ -8,7 +8,7 @@ RUN yarn && yarn build
 
 USER node
 
-FROM node:22.11.0-alpine3.19
+FROM node:22.12.0-alpine3.19
 WORKDIR /opt
 
 COPY --from=build /opt/package.json ./package.json
