@@ -5,7 +5,7 @@ runs:
   using: composite
   steps:
   - name: Setup ASDF Tools
-    uses: egose/actions/asdf-tools@2cb6906f52dc06be11304e008dbf844446f8146d
+    uses: egose/actions/asdf-tools@db60c101272c7b346aafe2fc438c9acdd3005294
 
   - name: Install Python Requirements
     run: |
